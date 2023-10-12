@@ -1,0 +1,68 @@
+
+10월 11, 2023 09:41:39.13 NEW SESSION
+10월 11, 2023 09:41:39.14 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+10월 11, 2023 10:25:22.27 [9808:15756:1011/102522.276:ERROR:interface_endpoint_client.cc(702)] Message 0 rejected by interface blink.mojom.WidgetHost
+10월 11, 2023 10:36:21.87 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+10월 11, 2023 10:45:58.71 [11572:10308:1011/104558.717:ERROR:cert_verify_proc_builtin.cc(701)] CertVerifyProcBuiltin for www.roadbook.co.kr failed:
+10월 11, 2023 10:45:58.71 ----- Certificate i=0 (CN=*.tistory.com,O=Kakao Corp.,L=Jeju-si,ST=Jeju-do,C=KR) -----
+10월 11, 2023 10:45:58.71 ERROR: Time is after notAfter
+10월 11, 2023 10:45:58.71 
+10월 11, 2023 10:45:58.71 
+10월 11, 2023 11:16:21.76 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+10월 11, 2023 11:17:32.43 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+10월 11, 2023 11:55:13.09 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+10월 11, 2023 13:09:56.26 [3028:3328:1011/130956.264:ERROR:interface_endpoint_client.cc(702)] Message 0 rejected by interface blink.mojom.WidgetHost
+10월 11, 2023 13:09:57.06 [3028:3328:1011/130957.068:ERROR:page_load_metrics_update_dispatcher.cc(178)] Invalid first_paint 0.542 s for first_image_paint 0.535 s
+10월 11, 2023 13:09:57.20 [3028:3328:1011/130957.199:ERROR:page_load_metrics_update_dispatcher.cc(178)] Invalid first_paint 0.542 s for first_image_paint 0.535 s
+10월 11, 2023 13:09:57.40 [3028:3328:1011/130957.401:ERROR:page_load_metrics_update_dispatcher.cc(178)] Invalid first_paint 0.542 s for first_image_paint 0.535 s
+10월 11, 2023 13:09:57.58 [3028:3328:1011/130957.581:ERROR:page_load_metrics_update_dispatcher.cc(178)] Invalid first_paint 0.542 s for first_image_paint 0.535 s
+10월 11, 2023 13:09:57.70 [3028:3328:1011/130957.703:ERROR:page_load_metrics_update_dispatcher.cc(178)] Invalid first_paint 0.542 s for first_image_paint 0.535 s
+10월 11, 2023 13:09:58.30 [3028:3328:1011/130958.308:ERROR:page_load_metrics_update_dispatcher.cc(178)] Invalid first_paint 0.542 s for first_image_paint 0.535 s
+10월 11, 2023 13:09:59.81 [3028:3328:1011/130959.818:ERROR:page_load_metrics_update_dispatcher.cc(178)] Invalid first_paint 0.542 s for first_image_paint 0.535 s
+10월 11, 2023 13:09:59.97 [3028:3328:1011/130959.974:ERROR:page_load_metrics_update_dispatcher.cc(178)] Invalid first_paint 0.542 s for first_image_paint 0.535 s
+10월 11, 2023 13:10:03.56 [3028:3328:1011/131003.562:ERROR:page_load_metrics_update_dispatcher.cc(178)] Invalid first_paint 0.542 s for first_image_paint 0.535 s
+10월 11, 2023 13:10:03.67 [3028:3328:1011/131003.674:ERROR:page_load_metrics_update_dispatcher.cc(178)] Invalid first_paint 0.542 s for first_image_paint 0.535 s
+10월 11, 2023 13:10:03.79 [3028:3328:1011/131003.792:ERROR:page_load_metrics_update_dispatcher.cc(178)] Invalid first_paint 0.542 s for first_image_paint 0.535 s
+10월 11, 2023 13:10:04.82 [3028:3328:1011/131004.824:ERROR:page_load_metrics_update_dispatcher.cc(178)] Invalid first_paint 0.542 s for first_image_paint 0.535 s
+10월 11, 2023 13:10:04.94 [3028:3328:1011/131004.940:ERROR:page_load_metrics_update_dispatcher.cc(178)] Invalid first_paint 0.542 s for first_image_paint 0.535 s
+10월 11, 2023 13:10:05.05 [3028:3328:1011/131005.059:ERROR:page_load_metrics_update_dispatcher.cc(178)] Invalid first_paint 0.542 s for first_image_paint 0.535 s
+10월 11, 2023 13:10:05.39 [3028:3328:1011/131005.390:ERROR:page_load_metrics_update_dispatcher.cc(178)] Invalid first_paint 0.542 s for first_image_paint 0.535 s
+10월 11, 2023 13:10:05.50 [3028:3328:1011/131005.509:ERROR:page_load_metrics_update_dispatcher.cc(178)] Invalid first_paint 0.542 s for first_image_paint 0.535 s
+10월 11, 2023 13:10:05.92 [3028:3328:1011/131005.922:ERROR:page_load_metrics_update_dispatcher.cc(178)] Invalid first_paint 0.542 s for first_image_paint 0.535 s
+10월 11, 2023 13:10:06.02 [3028:3328:1011/131006.024:ERROR:page_load_metrics_update_dispatcher.cc(178)] Invalid first_paint 0.542 s for first_image_paint 0.535 s
+10월 11, 2023 13:10:06.14 [3028:3328:1011/131006.143:ERROR:page_load_metrics_update_dispatcher.cc(178)] Invalid first_paint 0.542 s for first_image_paint 0.535 s
+10월 11, 2023 13:10:06.54 [3028:3328:1011/131006.541:ERROR:page_load_metrics_update_dispatcher.cc(178)] Invalid first_paint 0.542 s for first_image_paint 0.535 s
+10월 11, 2023 13:10:06.65 [3028:3328:1011/131006.658:ERROR:page_load_metrics_update_dispatcher.cc(178)] Invalid first_paint 0.542 s for first_image_paint 0.535 s
+10월 11, 2023 13:10:06.77 [3028:3328:1011/131006.775:ERROR:page_load_metrics_update_dispatcher.cc(178)] Invalid first_paint 0.542 s for first_image_paint 0.535 s
+10월 11, 2023 13:10:07.13 [3028:3328:1011/131007.130:ERROR:page_load_metrics_update_dispatcher.cc(178)] Invalid first_paint 0.542 s for first_image_paint 0.535 s
+10월 11, 2023 13:10:07.24 [3028:3328:1011/131007.240:ERROR:page_load_metrics_update_dispatcher.cc(178)] Invalid first_paint 0.542 s for first_image_paint 0.535 s
+10월 11, 2023 13:10:07.35 [3028:3328:1011/131007.359:ERROR:page_load_metrics_update_dispatcher.cc(178)] Invalid first_paint 0.542 s for first_image_paint 0.535 s
+10월 11, 2023 13:10:07.59 [3028:3328:1011/131007.594:ERROR:page_load_metrics_update_dispatcher.cc(178)] Invalid first_paint 0.542 s for first_image_paint 0.535 s
+10월 11, 2023 13:10:07.70 [3028:3328:1011/131007.709:ERROR:page_load_metrics_update_dispatcher.cc(178)] Invalid first_paint 0.542 s for first_image_paint 0.535 s
+10월 11, 2023 13:10:07.82 [3028:3328:1011/131007.825:ERROR:page_load_metrics_update_dispatcher.cc(178)] Invalid first_paint 0.542 s for first_image_paint 0.535 s
+10월 11, 2023 13:10:08.03 [3028:3328:1011/131008.037:ERROR:page_load_metrics_update_dispatcher.cc(178)] Invalid first_paint 0.542 s for first_image_paint 0.535 s
+10월 11, 2023 13:10:28.68 [3028:3328:1011/131028.686:ERROR:page_load_metrics_update_dispatcher.cc(178)] Invalid first_paint 0.542 s for first_image_paint 0.535 s
+10월 11, 2023 13:10:40.45 [3028:3328:1011/131040.458:ERROR:page_load_metrics_update_dispatcher.cc(178)] Invalid first_paint 0.542 s for first_image_paint 0.535 s
+10월 11, 2023 13:10:40.56 [3028:3328:1011/131040.561:ERROR:page_load_metrics_update_dispatcher.cc(178)] Invalid first_paint 0.542 s for first_image_paint 0.535 s
+10월 11, 2023 13:10:40.67 [3028:3328:1011/131040.676:ERROR:page_load_metrics_update_dispatcher.cc(178)] Invalid first_paint 0.542 s for first_image_paint 0.535 s
+10월 11, 2023 13:10:40.82 [3028:3328:1011/131040.825:ERROR:page_load_metrics_update_dispatcher.cc(178)] Invalid first_paint 0.542 s for first_image_paint 0.535 s
+10월 11, 2023 13:10:40.92 [3028:3328:1011/131040.926:ERROR:page_load_metrics_update_dispatcher.cc(178)] Invalid first_paint 0.542 s for first_image_paint 0.535 s
+10월 11, 2023 13:10:41.04 [3028:3328:1011/131041.044:ERROR:page_load_metrics_update_dispatcher.cc(178)] Invalid first_paint 0.542 s for first_image_paint 0.535 s
+10월 11, 2023 13:10:41.26 [3028:3328:1011/131041.266:ERROR:page_load_metrics_update_dispatcher.cc(178)] Invalid first_paint 0.542 s for first_image_paint 0.535 s
+10월 11, 2023 13:10:41.37 [3028:3328:1011/131041.379:ERROR:page_load_metrics_update_dispatcher.cc(178)] Invalid first_paint 0.542 s for first_image_paint 0.535 s
+10월 11, 2023 13:10:41.49 [3028:3328:1011/131041.493:ERROR:page_load_metrics_update_dispatcher.cc(178)] Invalid first_paint 0.542 s for first_image_paint 0.535 s
+10월 11, 2023 13:10:41.67 [3028:3328:1011/131041.675:ERROR:page_load_metrics_update_dispatcher.cc(178)] Invalid first_paint 0.542 s for first_image_paint 0.535 s
+10월 11, 2023 13:10:41.77 [3028:3328:1011/131041.776:ERROR:page_load_metrics_update_dispatcher.cc(178)] Invalid first_paint 0.542 s for first_image_paint 0.535 s
+10월 11, 2023 13:10:41.89 [3028:3328:1011/131041.894:ERROR:page_load_metrics_update_dispatcher.cc(178)] Invalid first_paint 0.542 s for first_image_paint 0.535 s
+10월 11, 2023 13:10:42.14 [3028:3328:1011/131042.143:ERROR:page_load_metrics_update_dispatcher.cc(178)] Invalid first_paint 0.542 s for first_image_paint 0.535 s
+10월 11, 2023 13:10:42.26 [3028:3328:1011/131042.261:ERROR:page_load_metrics_update_dispatcher.cc(178)] Invalid first_paint 0.542 s for first_image_paint 0.535 s
+10월 11, 2023 13:10:43.51 [3028:3328:1011/131043.515:ERROR:page_load_metrics_update_dispatcher.cc(178)] Invalid first_paint 0.542 s for first_image_paint 0.535 s
+10월 11, 2023 14:45:51.93 [3028:3328:1011/144551.938:ERROR:CONSOLE(1)] "Request Runtime.evaluate failed. {"code":-32602,"message":"uniqueContextId not found"}", source: devtools://devtools/bundled/devtools-frontend/front_end/core/protocol_client/protocol_client.js (1)
+10월 11, 2023 14:45:51.94 [3028:3328:1011/144551.942:ERROR:CONSOLE(1)] "uniqueContextId not found", source: devtools://devtools/bundled/devtools-frontend/front_end/core/sdk/sdk.js (1)
+10월 11, 2023 14:45:51.94 [3028:3328:1011/144551.942:ERROR:CONSOLE(1)] "Extension server error: Inspector protocol error: uniqueContextId not found", source: devtools://devtools/bundled/devtools-frontend/front_end/models/extensions/extensions.js (1)
+10월 11, 2023 14:45:51.95 [3028:3328:1011/144551.951:ERROR:CONSOLE(1)] "Received error with code E_PROTOCOLERROR while checking if react has loaded: "Inspector protocol error: %s"", source: chrome-extension://fmkadmapgofadopljbjfkapdkoienihi/build/main.js (1)
+10월 11, 2023 15:22:42.32 [3028:3328:1011/152242.326:ERROR:interface_endpoint_client.cc(702)] Message 5 rejected by interface blink.mojom.WidgetHost
+10월 11, 2023 16:18:56.20 [3028:3328:1011/161856.208:ERROR:CONSOLE(1)] "Request Runtime.evaluate failed. {"code":-32602,"message":"uniqueContextId not found"}", source: devtools://devtools/bundled/devtools-frontend/front_end/core/protocol_client/protocol_client.js (1)
+10월 11, 2023 16:18:56.20 [3028:3328:1011/161856.209:ERROR:CONSOLE(1)] "uniqueContextId not found", source: devtools://devtools/bundled/devtools-frontend/front_end/core/sdk/sdk.js (1)
+10월 11, 2023 16:18:56.21 [3028:3328:1011/161856.210:ERROR:CONSOLE(1)] "Extension server error: Inspector protocol error: uniqueContextId not found", source: devtools://devtools/bundled/devtools-frontend/front_end/models/extensions/extensions.js (1)
+10월 11, 2023 16:18:56.21 [3028:3328:1011/161856.214:ERROR:CONSOLE(1)] "Received error with code E_PROTOCOLERROR while checking if react has loaded: "Inspector protocol error: %s"", source: chrome-extension://fmkadmapgofadopljbjfkapdkoienihi/build/main.js (1)
