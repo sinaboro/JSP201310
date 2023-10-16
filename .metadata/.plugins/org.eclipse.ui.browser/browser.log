@@ -66,3 +66,6 @@
 10월 11, 2023 16:18:56.20 [3028:3328:1011/161856.209:ERROR:CONSOLE(1)] "uniqueContextId not found", source: devtools://devtools/bundled/devtools-frontend/front_end/core/sdk/sdk.js (1)
 10월 11, 2023 16:18:56.21 [3028:3328:1011/161856.210:ERROR:CONSOLE(1)] "Extension server error: Inspector protocol error: uniqueContextId not found", source: devtools://devtools/bundled/devtools-frontend/front_end/models/extensions/extensions.js (1)
 10월 11, 2023 16:18:56.21 [3028:3328:1011/161856.214:ERROR:CONSOLE(1)] "Received error with code E_PROTOCOLERROR while checking if react has loaded: "Inspector protocol error: %s"", source: chrome-extension://fmkadmapgofadopljbjfkapdkoienihi/build/main.js (1)
+
+10월 13, 2023 16:35:40.03 NEW SESSION
+10월 13, 2023 16:35:40.04 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
