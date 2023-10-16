@@ -82,6 +82,47 @@ public class MemberDAO {
 	
 	public MemberVO getMember(String userid) {
 		MemberVO vo =null;
+		String sql = "select * from member where userid=?";
+		Connection conn = null;
+		PreparedStatement pstmt = null;
+		ResultSet rs = null;
+		
+		try {
+			
+			conn = getConnection();
+			pstmt = conn.prepareStatement(sql);
+			pstmt.setString(1, userid);
+			rs = pstmt.executeQuery();
+		
+			if(rs.next()) {
+				String name = rs.getString("name");
+				String id = rs.getString("userid");
+				String pwd = rs.getString("pwd");
+				String email = rs.getString("email");
+				String phone = rs.getString("phone");
+				int admin = rs.getInt("admin");
+				
+				vo = new MemberVO();
+				vo.setName(name);
+				vo.setUserid(id);
+				vo.setEmail(email);
+				vo.setPwd(pwd);
+				vo.setPhone(phone);
+				vo.setAdmin(admin);
+			}
+			
+		}catch(Exception e) {
+			e.printStackTrace();
+		}finally {
+			try {
+				if(rs !=null) rs.close();
+				if(pstmt != null) pstmt.close();
+				if(conn != null) conn.close();
+			}catch(Exception e) {
+				e.printStackTrace();
+			}
+		}
+		
 		return vo;
 	}
 	
