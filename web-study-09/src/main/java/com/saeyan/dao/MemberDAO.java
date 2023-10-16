@@ -129,7 +129,36 @@ public class MemberDAO {
 	
 	//중복체크
 	public int confirmID(String userid) {
-		return 0;
+		
+		int result = -1;
+		
+		String sql = "select userid from member where userid=?";
+		Connection conn = null;
+		PreparedStatement pstmt = null;
+		ResultSet rs = null;
+		try {
+			 conn = getConnection();
+			 pstmt = conn.prepareStatement(sql);
+			 pstmt.setString(1, userid);
+			 rs = pstmt.executeQuery();
+			 if(rs.next()) {
+				 result = 1;  //아이디 존재
+			 }else {
+				 result = -1;
+			 }
+		}catch(Exception e) {
+			e.printStackTrace();
+		}finally {
+			try {
+				if(rs != null) rs.close();
+				if(pstmt != null) rs.close();
+				if(conn != null) rs.close();
+			}catch(Exception e) {
+				e.printStackTrace();
+			}
+		}
+		
+		return result;
 	}
 	
 	public int insertMember(MemberVO vo) {
@@ -141,6 +170,25 @@ public class MemberDAO {
 	}
 	
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
