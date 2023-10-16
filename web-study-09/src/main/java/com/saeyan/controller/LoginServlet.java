@@ -21,6 +21,12 @@ public class LoginServlet extends HttpServlet {
 	}
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		request.setCharacterEncoding("utf-8");
+		String userid = request.getParameter("userid");
+		String pwd = request.getParameter("pwd");
+	
+		System.out.println(userid);
+		System.out.println(pwd);
 	}
 
 }

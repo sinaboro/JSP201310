@@ -14,7 +14,7 @@
 <body>
 <div class="container">
   <h2>로그인</h2>
-  <form action="login.do" method="post">
+  <form action="login.do" method="post" name="frm">
     <div class="form-group">
       <label for="userid">아이디:</label>
       <input type="text" class="form-control" id="userid" placeholder="Enter usrid" name="userid">

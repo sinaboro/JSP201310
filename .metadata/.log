@@ -5670,3 +5670,6 @@ java.lang.IllegalStateException: Conflicting handlers: {[ActionHandler(org.eclip
 
 !ENTRY org.eclipse.lsp4e 1 0 2023-10-16 11:56:36.275
 !MESSAGE [Info]	Typescript Server version info: {version=5.1.6, source=user-setting}
+
+!ENTRY org.eclipse.lsp4e 1 0 2023-10-16 12:02:29.706
+!MESSAGE [Info]	ESLint server running in node v18.17.1
