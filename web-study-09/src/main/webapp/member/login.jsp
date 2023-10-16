@@ -26,6 +26,7 @@
     <button type="submit" class="btn btn-primary" onclick="return loginCheck()">로그인</button>&nbsp;&nbsp;
 	<button type="reset" class="btn btn-secondary">취소</button>&nbsp;&nbsp;
 	<button type="button" class="btn btn-success" onclick="location.href='join.do'">회원가입</button>
+	<h5 style="color: red">${message}</h5>
   </form>
 </div>
 
