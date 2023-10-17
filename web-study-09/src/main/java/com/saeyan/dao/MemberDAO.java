@@ -39,7 +39,7 @@ public class MemberDAO {
 		return conn;
 	}
 
-	//로그인
+	//로그인 check
 	public int userCheck(String userid, String pwd) {
 		int result = -1;
 		String sql = "select pwd from member where userid = ?";
@@ -80,6 +80,8 @@ public class MemberDAO {
 		return result;
 	}
 	
+	
+	//userid 해당하는 데이타 가져오기
 	public MemberVO getMember(String userid) {
 		MemberVO vo =null;
 		String sql = "select * from member where userid=?";
@@ -161,12 +163,77 @@ public class MemberDAO {
 		return result;
 	}
 	
+	//회원 가입
 	public int insertMember(MemberVO vo) {
-		return 0;
+		int result=-1;
+		String sql = "insert into member values(?, ?, ?, ?, ?, ?)";
+		Connection conn = null;
+		PreparedStatement pstmt = null;
+		
+		try {
+			//1. db연결
+			conn = getConnection();
+			//2. sql구문을 오라클 전달
+			pstmt = conn.prepareStatement(sql);
+			//3. 맵핑.
+			pstmt.setString(1, vo.getName());
+			pstmt.setString(2, vo.getUserid());
+			pstmt.setString(3, vo.getPwd());
+			pstmt.setString(4, vo.getEmail());
+			pstmt.setString(5, vo.getPhone());
+			pstmt.setInt(6, vo.getAdmin());
+			
+			result = pstmt.executeUpdate();
+			
+		}catch(Exception e) {
+			e.printStackTrace();
+		}finally {
+			try {
+				if(pstmt != null) pstmt.close();
+				if(conn != null) conn.close();
+			}catch(Exception e){
+				e.printStackTrace();
+			}
+		}
+		
+		return result;
 	}
 	
+	
+	//회원 수정
 	public int updateMember(MemberVO vo) {
-		return 0;
+		int result=-1;
+		Connection conn = null;
+		PreparedStatement pstmt = null;
+		String sql = "update member set name=?, pwd=?, email=?, phone = ?,admin=? where userid = ?";
+		try {
+			
+			//1. db연결
+			conn = getConnection();
+			//2. sql구문을 오라클 전달
+			pstmt = conn.prepareStatement(sql);
+			//3. 맵핑.
+			pstmt.setString(1, vo.getName());
+			pstmt.setString(2, vo.getPwd());
+			pstmt.setString(3, vo.getEmail());
+			pstmt.setString(4, vo.getPhone());
+			pstmt.setInt(5, vo.getAdmin());
+			pstmt.setString(6, vo.getUserid());
+			
+			result = pstmt.executeUpdate();
+			
+		}catch(Exception e) {
+			e.printStackTrace();
+		}finally {
+			try {
+				if(pstmt != null) pstmt.close();
+				if(conn != null) conn.close();
+			}catch(Exception e){
+				e.printStackTrace();
+			}
+		}
+		
+		return result;
 	}
 	
 }

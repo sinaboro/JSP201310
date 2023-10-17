@@ -1,3 +1,12 @@
+function idCheck(){
+	if(document.frm.userid.value == ""){
+		alert("아이디를 입력해주세요.");
+		return;
+	}
+	
+	let url = "idCheck.do?userid=" + document.frm.userid.value;
+	window.open(url, "_blank_1", "toolbar=no, menubar=no, scrollbars=yes, resizable=no, width=450, height=200");
+}
 
 function idOk(){
 	opener.frm.userid.value 
@@ -24,13 +33,5 @@ function loginCheck(){
 }
 
 
-function idCheck(){
-	if(document.frm.userid.value == ""){
-		alert("아이디를 입력해주세요.");
-		return;
-	}
-	
-	let url = "idCheck.do?userid=" + document.frm.userid.value;
-	window.open(url, "_blank_1", "toolbar=no, menubar=no, scrollbars=yes, resizable=no, width=450, height=200");
-}
+
 

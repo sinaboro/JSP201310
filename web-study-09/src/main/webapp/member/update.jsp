@@ -1,5 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -13,18 +15,17 @@
 </head>
 <body>
 <div class="container">
-  <h2>회원가입</h2>
-  <form action="join.do" method="post" name="frm">
+  <h2>회원정보수정</h2>
+  <form action="memberUpdate.do" method="post" name="frm">
+  
     <div class="form-group">
       <label for="name">이름:</label>
-      <input type="text" class="form-control" id="name" placeholder="Enter name" name="name">
+      <input type="text" class="form-control" id="name" placeholder="Enter name" name="name" value=${mVo.name}>
     </div>
     
     <div class="form-group">
       <label for="userid">아이디:</label> 
-      <input type="button" value="중복체크"  class="btn btn-info btn-sm float-right" onclick="idCheck()">
-      <input type="text" class="form-control" id="userid" placeholder="Enter usrid" name="userid">
-      <input type="hidden" name="reid">
+      <input type="text" class="form-control" id="userid" placeholder="Enter usrid" name="userid" value=${mVo.userid} readonly="readonly">
     </div>
     
     <div class="form-group">
@@ -37,18 +38,31 @@
     </div>
     <div class="form-group">
       <label for="email">이메일:</label>
-      <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+      <input type="email" class="form-control" id="email" placeholder="Enter email" name="email" value=${mVo.email}>
     </div>
     <div class="form-group">
       <label for="phone">전화번호:</label>
-      <input type="text" class="form-control" id="phone" placeholder="Enter phone" name="phone">
+      <input type="text" class="form-control" id="phone" placeholder="Enter phone" name="phone" value=${mVo.phone}>
     </div>
-     <div class="form-group">
-  	   <label  >등급:</label><br>
-	    <input type="radio" name=admin value="0" checked="checked">일반회원
-	    <input type="radio" name=admin value="1" >관리자
-    </div>
-    <button type="submit" class="btn btn-primary" >확인</button>&nbsp;&nbsp;
+    
+    
+    <c:if test="${mVo.admin == 0}">
+	     <div class="form-group">
+	  	   <label  >등급:</label><br>
+		    <input type="radio" name=admin value="0" checked="checked">일반회원
+		    <input type="radio" name=admin value="1" >관리자
+	    </div>
+    </c:if>
+
+    <c:if test="${mVo.admin ==1}">
+	     <div class="form-group">
+	  	   <label  >등급:</label><br>
+		    <input type="radio" name=admin value="0" >일반회원
+		    <input type="radio" name=admin value="1" checked="checked">관리자
+	    </div>
+    </c:if>
+    
+    <button type="submit" class="btn btn-primary" >수정</button>&nbsp;&nbsp;
 	<button type="reset" class="btn btn-secondary">취소</button>&nbsp;&nbsp;
   </form>
 </div>

@@ -23,5 +23,6 @@ public class MemberVO {
 	private String email;
 	private String phone;
 	private int admin;
+//	private Integer admin;
 	
 }
