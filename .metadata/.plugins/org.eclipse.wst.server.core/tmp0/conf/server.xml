@@ -107,7 +107,8 @@
 
 
 
-				<Context docBase="C:\JavaWorks\wokrs\jsp\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\ROOT" path="" reloadable="false"/><Context docBase="C:\JavaWorks\wokrs\jsp\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\web-study-09" path="/web-study-09" reloadable="true" source="org.eclipse.jst.jee.server:web-study-09">
+
+				<Context docBase="C:\JavaWorks\wokrs\jsp\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\ROOT" path="" reloadable="false"/><Context docBase="C:\JavaWorks\wokrs\jsp\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\jsp-study-09" path="/jsp-study-09" reloadable="true" source="org.eclipse.jst.jee.server:jsp-study-09">
 					<Resource auth="Container" driverClassName="oracle.jdbc.OracleDriver" maxIdle="10" maxTotal="20" maxWaitMillis="-1" name="jdbc/myoracle" password="tiger" type="javax.sql.DataSource" url="jdbc:oracle:thin:@127.0.0.1:1521:xe" username="scott"/>
 				</Context>
 			</Host>
