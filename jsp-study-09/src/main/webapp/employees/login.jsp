@@ -20,8 +20,8 @@
 </head>
 <body>
 <%@ include file="header.jsp" %>
+<form action="login.do" method="post">
 <div class="container">
-  <h2>회원전용페이지</h2>
   <table class="table table-bordered">
     <thead>
       <tr>
@@ -58,5 +58,6 @@
     </tbody>
   </table>
 </div>
+</form>
 </body>
 </html>
