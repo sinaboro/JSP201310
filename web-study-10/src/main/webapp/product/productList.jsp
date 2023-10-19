@@ -33,7 +33,7 @@
 	        <td>${product.code}</td>
 	        <td>${product.name}</td>
 	        <td><fmt:formatNumber value="${product.price}" type="currency"></fmt:formatNumber>원</td>
-	        <td>상품 수정</td>
+	        <td><a href="productUpdate.do?code=${product.code}"> 상품 수정</a></td>
 	        <td>상품 삭제</td>
 	      </tr>
 	    </c:forEach> 

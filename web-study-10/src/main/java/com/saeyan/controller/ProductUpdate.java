@@ -15,18 +15,28 @@ import com.oreilly.servlet.multipart.DefaultFileRenamePolicy;
 import com.saeyan.dao.ProductDAO;
 import com.saeyan.dto.ProductVO;
 
-@WebServlet("/productWrite.do")
-public class ProductWriteServlet extends HttpServlet{
-	
-	@Override
+
+@WebServlet("/productUpdate.do")
+public class ProductUpdate extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+       
+    
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		RequestDispatcher dis  =request.getRequestDispatcher("product/productWriter.jsp");
+		String code  = request.getParameter("code");
+		
+		ProductDAO pDao = ProductDAO.getInstance();
+		ProductVO vo = pDao.selectProductByCode(code);
+		
+		request.setAttribute("product", vo);
+		
+		RequestDispatcher dis = request.getRequestDispatcher("product/productUpdate.jsp");
 		dis.forward(request, response);
+		
 	}
+
 	
-	@Override
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		request.setCharacterEncoding("utf-8");
+request.setCharacterEncoding("utf-8");
 		
 		ServletContext context = getServletContext();
 		String path = context.getRealPath("upload");
@@ -41,16 +51,18 @@ public class ProductWriteServlet extends HttpServlet{
 				new DefaultFileRenamePolicy()  //중복되면 파일명뒤에 숫자1식 증가
 				);
 		
+		String code = multi.getParameter("code");
 		String name = multi.getParameter("name");
 		int price = Integer.parseInt(multi.getParameter("price"));
 		String description = multi.getParameter("description");
-		
-		
-		//파일명
 		String pictureurl = multi.getFilesystemName("pictureurl");
 		
+		if(pictureurl == null) {
+			pictureurl = multi.getParameter("nonmakeIMg");
+		}
 		
 		ProductVO vo = new ProductVO();
+		vo.setCode( Integer.parseInt(code));
 		vo.setName(name);
 		vo.setPrice(price);
 		vo.setDescription(description);
@@ -61,7 +73,7 @@ public class ProductWriteServlet extends HttpServlet{
 		
 		
 		ProductDAO pDao = ProductDAO.getInstance();
-		int result = pDao.insertProduct(vo);
+		int result = pDao.updateProduct(vo);
 		System.out.println("result : " + result);
 		
 		if(result == 1 ) {
@@ -69,24 +81,6 @@ public class ProductWriteServlet extends HttpServlet{
 		}else {
 			response.sendRedirect("productWrite.do");
 		}
-		
 	}
+
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

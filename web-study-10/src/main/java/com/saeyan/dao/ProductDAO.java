@@ -95,7 +95,33 @@ private static ProductDAO instance = new ProductDAO();
 	
 	//기본키 code 해당 하는 데이타만 검색
 	public ProductVO selectProductByCode(String code) {
-		return null;
+		ProductVO vo = new ProductVO();
+		
+		String sql = "select * from product where code = ?";
+		Connection conn = null;
+		PreparedStatement pstmt = null;
+		ResultSet rs = null;
+		
+		try {
+			conn = getConnection();
+			pstmt = conn.prepareStatement(sql);
+			pstmt.setInt(1, Integer.parseInt(code));
+			rs = pstmt.executeQuery();
+			
+			if(rs.next()) {
+				vo.setCode(rs.getInt("code"));
+				vo.setName(rs.getString("name"));
+				vo.setPrice(rs.getInt("price"));
+				vo.setPictureurl(rs.getString("PICTUREURL"));
+				vo.setDescription(rs.getString("DESCRIPTION"));
+			}
+			
+		}catch(Exception e) {
+			e.printStackTrace();
+		}finally {
+			ProductDAO.close(conn, pstmt,rs);
+		}
+		return vo;
 	}
 	
 	//id, password 체크
@@ -110,15 +136,92 @@ private static ProductDAO instance = new ProductDAO();
 	
 	//데이타 추가
 	public int insertProduct(ProductVO vo) {
-		return 0;
+		String sql = 
+	"insert into product values(product_seq.nextval, ?, ?, ?, ?)";
+		Connection conn = null;
+		PreparedStatement pstmt = null;
+		int result = -1;
+		
+		try {
+			conn = getConnection();
+			pstmt = conn.prepareStatement(sql);
+			
+			/* 매핑
+			 * NAME                 VARCHAR2(100)  
+			  PRICE                NUMBER(8)      
+              PICTUREURL           VARCHAR2(50)   
+              DESCRIPTION          VARCHAR2(1000) 
+			 */
+			pstmt.setString(1, vo.getName());
+			pstmt.setInt(2, vo.getPrice());
+			pstmt.setString(3, vo.getPictureurl());
+			pstmt.setString(4, vo.getDescription());
+			
+			result = pstmt.executeUpdate();
+			
+		}catch(Exception e) {
+			e.printStackTrace();
+		}finally {
+			ProductDAO.close(conn, pstmt);
+		}
+		
+		return result;
 	}
 
 	//데이타 수정
 	public int updateProduct(ProductVO vo) {
-		return 0;
+		String sql = "update product set name=?, price=? , PICTUREURL=?, DESCRIPTION=?  where code = ?"; 
+				
+		Connection conn = null;
+		PreparedStatement pstmt = null;
+		int result = -1;
+		
+		try {
+			conn = getConnection();
+			pstmt = conn.prepareStatement(sql);
+			
+			/* 매핑
+			 * NAME                 VARCHAR2(100)  
+			  PRICE                NUMBER(8)      
+              PICTUREURL           VARCHAR2(50)   
+              DESCRIPTION          VARCHAR2(1000) 
+			 */
+			pstmt.setString(1, vo.getName());
+			pstmt.setInt(2, vo.getPrice());
+			pstmt.setString(3, vo.getPictureurl());
+			pstmt.setString(4, vo.getDescription());
+			pstmt.setInt(5, vo.getCode());
+			
+			result = pstmt.executeUpdate();
+			
+		}catch(Exception e) {
+			e.printStackTrace();
+		}finally {
+			ProductDAO.close(conn, pstmt);
+		}
+		
+		return result;
 	}
 	
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
