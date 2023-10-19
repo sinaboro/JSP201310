@@ -24,7 +24,6 @@ INDEX VERSION 1.134+C:\JavaWorks\wokrs\jsp\.metadata\.plugins\org.eclipse.jdt.co
 1240474610.index
 1600996326.index
 822998057.index
-927989461.index
 1935107647.index
 2872213047.index
 2203832244.index

@@ -202,6 +202,28 @@ private static ProductDAO instance = new ProductDAO();
 		
 		return result;
 	}
+
+	public int deleteProduct(int code) {
+		
+		String sql = "delete from product where code=?";
+		Connection conn = null;
+		PreparedStatement pstmt = null;
+		int result = -1;
+		
+		try {
+			conn = getConnection();
+			pstmt = conn.prepareStatement(sql);
+			pstmt.setInt(1, code);
+			
+			result = pstmt.executeUpdate();
+		}catch(Exception e) {
+			e.printStackTrace();
+		}finally {
+			ProductDAO.close(conn, pstmt);
+		}
+		
+		return result;
+	}
 	
 }
 
