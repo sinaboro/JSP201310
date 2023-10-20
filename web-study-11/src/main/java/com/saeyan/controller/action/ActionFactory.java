@@ -20,6 +20,8 @@ public class ActionFactory {
 			action = new BoardWriteFormAction();
 		}else if(command.equals("board_write")) {
 			action = new BoardWriteAction();
+		}else if(command.equals("board_view")) {
+			action = new BoardViewFromAction();
 		}
 		return action;
 	}

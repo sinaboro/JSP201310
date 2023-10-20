@@ -16,7 +16,7 @@ public class BoardServlet extends HttpServlet{
 	@Override //BoardServlet?command=board_write-form
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
-		
+		//BoardServlet?command=board_view&num=${board.num}
 		String command = request.getParameter("command");
 		System.out.println("BoardServlet에서 요청을 받음을 확인 : " + command);
 		
