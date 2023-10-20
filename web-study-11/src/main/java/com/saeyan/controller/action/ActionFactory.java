@@ -22,6 +22,12 @@ public class ActionFactory {
 			action = new BoardWriteAction();
 		}else if(command.equals("board_view")) {
 			action = new BoardViewFromAction();
+		}else if(command.equals("board_check_pass_form")) {
+			action = new BoardCheckPassFormAction();
+		}else if(command.equals("board_check_pass")) {
+			action = new BoardCheckPassAction();
+		}else if(command.equals("board_update_form")) {
+			action = new BoardUpdateFormAction();
 		}
 		return action;
 	}
