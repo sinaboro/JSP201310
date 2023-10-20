@@ -39,6 +39,7 @@ public class BoardDAO {
 				vo.setName(rs.getString("name"));
 				vo.setPass(rs.getString("pass"));
 				vo.setEmail(rs.getString("email"));
+				vo.setTitle(rs.getString("title"));
 				vo.setContent(rs.getString("content"));
 				vo.setReadcount(rs.getInt("readcount"));
 				vo.setWritedate(rs.getTimestamp("writedate"));
@@ -51,13 +52,14 @@ public class BoardDAO {
 		}finally {
 			DBManager.close(conn, pstmt, rs);
 		}
-		
-		
-		
 		return list;
 	}
 
-	
+	public int insertBoard(BoardVO vo) {
+		int result = -1;
+		
+		return result;
+	}
 }
 
 

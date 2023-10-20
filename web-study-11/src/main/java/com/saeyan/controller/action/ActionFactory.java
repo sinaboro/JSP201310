@@ -10,12 +10,16 @@ public class ActionFactory {
 		return instance;
 	}
 	
-	public Action getAction(String command) {
+	public Action getAction(String command) { 
 		Action action = null;
 		System.out.println("ActionFactory : " + command);
 		
 		if(command.equals("board_list")) {
 			action = new BoardListAction();
+		}else if(command.equals("board_write-form")) {
+			action = new BoardWriteFormAction();
+		}else if(command.equals("board_write")) {
+			action = new BoardWriteAction();
 		}
 		return action;
 	}

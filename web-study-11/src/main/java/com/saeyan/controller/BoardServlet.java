@@ -13,8 +13,9 @@ import com.saeyan.controller.action.ActionFactory;
 
 @WebServlet("/BoardServlet")
 public class BoardServlet extends HttpServlet{
-	@Override
+	@Override //BoardServlet?command=board_write-form
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		
 		
 		String command = request.getParameter("command");
 		System.out.println("BoardServlet에서 요청을 받음을 확인 : " + command);

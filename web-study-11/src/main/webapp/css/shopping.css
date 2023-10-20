@@ -10,7 +10,7 @@ h1{
 }
 
 table{
-	width: 100px;
+	width: 100%;
 	border-collapse: collapse;  
 	font-size: 12px;
 	line-height: 24px;
