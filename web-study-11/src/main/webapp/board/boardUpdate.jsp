@@ -16,6 +16,9 @@
 	<form name="frm" method="post" action="BoardServlet">
 		<input type="hidden" name="command" value="board_update">
 		<input type="hidden" name="num" value="${board.num}">
+		
+	<%-- 	<input type="hidden" name="num" value="${param.num}"> --%>
+
 		<table>
 			<tr>
 				<th>작성자</th>

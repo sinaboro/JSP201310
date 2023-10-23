@@ -14,7 +14,8 @@
 		window.opener.parent.location.href = 
 			"BoardServlet?command=board_update_form&num=${param.num}" 
 	}else if(window.name == 'delete'){
-		
+		window.opener.parent.location.href = 
+			"BoardServlet?command=board_delete&num=${param.num}" 
 	}
 	window.close();
 </script>
