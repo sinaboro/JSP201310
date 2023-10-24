@@ -13,6 +13,8 @@ C:\JavaWorks\wokrs\jsp\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\384
 \web-study-05\src\main\java
 C:\JavaWorks\wokrs\jsp\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3683830406.index
 \self-study-01\src\main\java
+C:\JavaWorks\wokrs\jsp\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2428438806.index
+\JspOracle0729\src\main\java
 C:\JavaWorks\wokrs\jsp\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2436900184.index
 \web-study-04\src\main\java
 C:\JavaWorks\wokrs\jsp\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3444962523.index
