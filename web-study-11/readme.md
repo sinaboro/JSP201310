@@ -52,4 +52,26 @@ System.out.println("conn : " + conn);
  
  
  
+ --------------------------
+ MySQL
+ --------------------------
+ create table board(
+    num int  auto_increment primary key,
+    pass VARCHAR(30) not null,
+    name VARCHAR(30) not null,
+    email VARCHAR(30),
+    title VARCHAR(50),
+    content VARCHAR(1000),
+    readcount int DEFAULT 0,
+    writedate date default (current_date)
+ );
  
+ select * from board;
+ 
+ insert into board(num, name, email, pass,title, content) 
+ values(null, '성윤정', 'pink@name.com', '1234', '첫방문', '반갑습니다');
+  
+ insert into board(num, name, email, pass,title, content) 
+ values(null, '조조', 'java@name.com', '1234', '삼국지', '반갑습니다');
+
+ commit;
